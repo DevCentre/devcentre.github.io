@@ -49,6 +49,12 @@
   box-sizing: border-box;
 }
 
+/* .ul-secondary{
+  position: absolute;
+  margin-top: 4em;
+  margin-left: 2em;
+} */
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -1805,6 +1811,9 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+  .buttonDownload{
+    width:100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1816,6 +1825,9 @@ pre code {
   }
   .table-responsive-md > .table-bordered {
     border: 0;
+  }
+  .buttonDownload{
+    width:100%;
   }
 }
 
