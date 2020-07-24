@@ -55,6 +55,12 @@
   margin-left: 2em;
 } */
 
+.buttonDownload{
+  /* position:static; */
+  /* margin-top:-6.7%; */
+  /* left:75.6%; */
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -1812,7 +1818,8 @@ pre code {
     border: 0;
   }
   .buttonDownload{
-    width:100%;
+    /* margin-top:1em; */
+    /* width:100%; */
   }
 }
 
@@ -1827,7 +1834,9 @@ pre code {
     border: 0;
   }
   .buttonDownload{
-    width:100%;
+    /* margin-top:-2.4em; */
+    /* width:100%; */
+    /* float:right; */
   }
 }
 
