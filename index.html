@@ -28,7 +28,12 @@
 </head>
 
 <body>
-
+  <div class='container-fluid' style='padding-bottom:2rem'>
+    <select class="form-control col-md-2 float-right mt-2" data-width="fit" id='selectLang'>
+      <option value='pt'>🇧🇷 🇵🇹 Português</option>
+      <option value='en'>🇬🇧 🇺🇸 English</option>
+    </select>
+  </div><br />
   <article class="resume-wrapper text-center position-relative">
     <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
       <header class="resume-header pt-4 pt-md-0">
@@ -506,11 +511,25 @@
 
 
   <script src="assets/js/jquery.min.js" charset="utf-8" type="text/javascript"></script>
-  <script src="assets/js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+
+  <script type="text/javascript">
+
+    $('#selectLang').on('change',function(){
+      selectedLang = $(this).val();
+      if(selectedLang == 'en'){
+        window.location.href='index_en.html';
+      }
+      // console.log(selectedLang);
+    });
+
+  </script>
+
+
 
 
 
 
 </body>
+
 
 </html>

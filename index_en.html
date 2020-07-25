@@ -28,12 +28,13 @@
 </head>
 
 <body>
-
+  <div class='container-fluid' style='padding-bottom:2rem'>
+    <select class="form-control col-md-2 float-right mt-2" data-width="fit" id='selectLang'>
+      <option value='pt'>🇧🇷 🇵🇹 Português</option>
+      <option value='en' selected='selected'>🇬🇧 🇺🇸 English</option>
+    </select>
+  </div><br />
   <article class="resume-wrapper text-center position-relative">
-    <!-- <select class="selectpicker" data-width="fit">
-      <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-      <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-    </select> -->
     <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
       <header class="resume-header pt-4 pt-md-0">
         <div class="media flex-column flex-md-row">
@@ -70,7 +71,7 @@
           </div>
           <!--//media-body-->
           <div class='buttonDownload float-right'>
-            <button type='submit' class='btn btn-success ' onclick='window.open("FelipePena-CV.pdf")'><i class='fas fa-file-pdf'></i> PDF Version</button>
+            <button type='submit' class='btn btn-success ' onclick='window.open("FelipePena-CV_EN.pdf")'><i class='fas fa-file-pdf'></i> PDF Version</button>
           </div>
           <!--//media-->
         </div>
@@ -522,6 +523,22 @@
 
     </div>
   </article>
+
+
+  <script src="assets/js/jquery.min.js" charset="utf-8" type="text/javascript"></script>
+
+  <script type="text/javascript">
+
+    $('#selectLang').on('change',function(){
+      selectedLang = $(this).val();
+      if(selectedLang == 'pt'){
+        window.location.href='index.html';
+      }
+      // console.log(selectedLang);
+    });
+
+  </script>
+
 
 
 
