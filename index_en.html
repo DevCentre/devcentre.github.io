@@ -1,484 +1,1101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Felipe Pena - Senior Software Engineer</title>
 
-<head>
-  <title>Felipe Pena -  Full Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href=".ico" />
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href=".ico">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
 
-  <!-- FontAwesome JS-->
-  <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css" />
+  </head>
 
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
-
-  <style>
-    .img-cert {
-      width: 15px;
-      padding-bottom: 10px;
-    }
-  </style>
-
-</head>
-
-
-<body>
-  <div class='container-fluid' style='padding-bottom:2rem'>
-    <select class="form-control col-md-2 float-right mt-2" data-width="fit" id='selectLang'>
-      <option value='pt'>🇧🇷 🇵🇹 Português</option>
-      <option value='en' selected='selected'>🇬🇧 🇺🇸 English</option>
-    </select>
-  </div><br />
-  <article class="resume-wrapper text-center position-relative">
-    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
-      <header class="resume-header pt-4 pt-md-0">
-        <div class="media flex-column flex-md-row">
-          <img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
-          <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-            <div class="primary-info">
-              <h1 class="name mt-0 mb-1 text-white text-uppercase">Felipe Pena</h1>
-              <div class="title mb-3">Full Stack Developer</div>
-              <ul class="list-unstyled">
-                <li class="mb-2">
-                  <a href='mailto:felipecgpena@gmail.com?subject=[Curriculum] Contact &body=Write here the reason for your contact...' target='_blank'>
-                    <i class="far fa-envelope fa-fw mr-2"data-fa-transform="grow-3"></i> felipecgpena@gmail.com
-                  </a>
+  <body>
+    <details class="resume-actions" aria-label="Resume actions" open>
+      <summary class="resume-actions-toggle">
+        <span class="resume-actions-toggle-text">
+          <!-- <span class="resume-actions-title">Quick actions</span> -->
+          <span class="resume-actions-subtitle"
+            >Language Selection and PDF download</span
+          >
+        </span>
+        <span class="resume-actions-indicator" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="resume-actions-content">
+        <div class="resume-actions-controls">
+          <div class="btn-group" role="group" aria-label="Select language">
+            <a href="index.html" class="btn btn-outline-primary">Português</a>
+            <a href="index_en.html" class="btn btn-primary" aria-current="page"
+              >English</a
+            >
+          </div>
+          <a
+            class="btn btn-success resume-actions-download"
+            href="FelipePena-CV_EN.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+        </div>
+      </div>
+    </details>
+    <article class="resume-wrapper text-center position-relative">
+      <div class="resume-wrapper-inner text-left bg-white shadow-lg">
+        <header class="resume-header pt-4 pt-md-0">
+          <div class="media flex-column flex-md-row">
+            <img
+              class="mr-3 img-fluid picture mx-auto"
+              src="assets/images/profile.jpg"
+              alt="Profile photo of Felipe Pena"
+            />
+            <div
+              class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0"
+            >
+              <div class="primary-info">
+                <h1 class="name mt-0 mb-1 text-white text-uppercase">
+                  Felipe Pena
+                </h1>
+                <div class="title mb-3">Senior Software Engineer</div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a
+                      href="mailto:felipecgpena@gmail.com?subject=[Curriculum] Contact &body=Write here the reason for your contact..."
+                    >
+                      <i
+                        class="far fa-envelope fa-fw mr-2"
+                        data-fa-transform="grow-3"
+                      ></i>
+                      felipecgpena@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5561985513997"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i
+                        class="fas fa-mobile-alt fa-fw mr-2"
+                        data-fa-transform="grow-6"
+                      ></i>
+                      +55 61 98551-3997
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--//primary-info-->
+              <div class="secondary-info ml-md-auto mt-2">
+                <!-- <ul class="resume-social list-unstyled" style="position: absolute;margin-top: 4em;margin-left: 35em;"> -->
+                <ul class="resume-social list-unstyled">
+                  <li class="mb-3">
+                    <a
+                      href="https://www.linkedin.com/in/felipe-pena/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span class="fa-container text-center mr-2"
+                        ><i class="fab fa-linkedin-in fa-fw"></i></span
+                      >linkedin</a
+                    >
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="https://github.com/devcentre"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span class="fa-container text-center mr-2"
+                        ><i class="fab fa-github-alt fa-fw"></i></span
+                      >github</a
+                    >
+                  </li>
+                  <!-- <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li> -->
+                  <!-- <li><a href="#"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li> -->
+                </ul>
+              </div>
+              <!--//secondary-info-->
+            </div>
+            <!--//media-body-->
+          </div>
+        </header>
+        <div class="resume-body p-5">
+          <nav class="quick-nav mb-4" aria-label="Quick resume navigation">
+            <a href="#summary">Summary</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+          </nav>
+          <section class="resume-section summary-section mb-5" id="summary">
+            <h2
+              class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+            >
+              Summary
+            </h2>
+            <div class="resume-section-content">
+              <p class="mb-0">
+                Senior Software Engineer with 10+ years of experience delivering
+                full-stack products, cloud-enabled platforms, and automation in
+                enterprise and SMB contexts.
+              </p>
+              <ul class="impact-list mt-3 mb-0">
+                <li>
+                  Hands-on delivery across architecture, implementation, CI/CD,
+                  and operations.
                 </li>
                 <li>
-                  <a href="https://api.whatsapp.com/send?phone=5561985513997" target="_blank">
-                    <i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i> +55 61 98551-3997
-                  </a>
+                  Technical leadership for platform initiatives serving
+                  high-volume concurrent usage.
+                </li>
+                <li>
+                  Strong outcomes in systems integration, BI enablement, and
+                  operational efficiency.
                 </li>
               </ul>
             </div>
-            <!--//primary-info-->
-            <div class="secondary-info ml-md-auto mt-2">
-              <!-- <ul class="resume-social list-unstyled" style="position: absolute;margin-top: 4em;margin-left: 35em;"> -->
-              <ul class="resume-social list-unstyled">
-                <li class="mb-3"><a href="https://www.linkedin.com/in/felipe-pena-bb5931125/" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin</a></li>
-                <li class="mb-3"><a href="https://github.com/devcentre" target="_blank"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github</a></li>
-                <!-- <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li> -->
-                <!-- <li><a href="#"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li> -->
-              </ul>
-            </div>
-            <!--//secondary-info-->
-
-          </div>
-          <!--//media-body-->
-          <div class='buttonDownload float-right'>
-            <button type='submit' class='btn btn-success ' onclick='window.open("FelipePena-CV_EN.pdf")'><i class='fas fa-file-pdf'></i> PDF Version</button>
-          </div>
-          <!--//media-->
-        </div>
-
-      </header>
-      <div class="resume-body p-5">
-        <section class="resume-section summary-section mb-5">
-          <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Summary</h2>
-          <div class="resume-section-content">
-            <p class="mb-0 ">
-              Graduated in Systems Analysis and Development and post graduated in Computer Forensics and Digital Expertise,
-              he is passionate about technology, developed a taste for information security and development from an early age.
-              Amateur programmer since the age of 14 and professional since the age of 18, he did several jobs in WEB
-              programming (sites and systems) and consultancy for companies in various segments. Currently works as an Analyst,
-              developer and IT consultant.
-            </p>
-          </div>
-        </section>
-        <!--//summary-section-->
-        <div class="row">
-          <div class="col-lg-9">
-            <section class="resume-section experience-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">EXPERIENCE</h2>
-              <div class="resume-section-content">
-                <div class="resume-timeline position-relative">
-                  <article class="resume-timeline-item position-relative pb-5">
-
-                    <div class="resume-timeline-item-header mb-2">
-                      <div class="d-flex flex-column flex-md-row">
-                        <h3 class="resume-position-title font-weight-bold mb-1">Full Stack Developer</h3>
-                        <div class="resume-company-name ml-auto"><i class="far fa-building"></i> <a href='https://www.oi.com.br/' target='_blank'>Oi S/A</a></div>
+          </section>
+          <!--//summary-section-->
+          <div class="row">
+            <div class="col-lg-9">
+              <section
+                class="resume-section experience-section mb-5"
+                id="experience"
+              >
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  EXPERIENCE
+                </h2>
+                <div class="resume-section-content">
+                  <div class="resume-timeline position-relative">
+                    <article
+                      class="resume-timeline-item position-relative pb-5"
+                    >
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Senior Software Developer Engineer
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a
+                              href="https://www.wexinc.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >WEX Inc</a
+                            >
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">
+                          Apr 2021 - Present
+                        </div>
                       </div>
-                      <!--//row-->
-                      <div class="resume-position-time">Feb 2018 - Current</div>
-                    </div>
-                    <!--//resume-timeline-item-header-->
-                    <div class="resume-timeline-item-desc">
-                      <p>
-                        I work as a leader in the development of a WEB system (PHP, HTML and JavaScript) aimed at
-                        internal users (600 simultaneous accesses throughout the national territory) of the company,
-                        which in the future aims to be used by Oi customers to purchase products and services.
-                        A georeferencing module of the customer's address base was also developed with calculations
-                        for the access network, including cost, term and means of access. The most diverse automations
-                        using the Python programming language are also routine jobs, with extractions of information from
-                        data feed as well as the generation of dashes using PowerBI for decision making of the company's
-                        board and president.
-                      </p>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                      <p>Optimization of the company's B2B activities.</p>
-                      <ul>
-                        <li>Systems integration - microservices (APIs).</li>
-                        <li>Transparency and management of activities carried out by users and areas.</li>
-                        <li>Consolidation and data processing for use in BI.</li>
-                        <li>Continuous cost reduction.</li>
-                      </ul>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies Used:</h4>
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Python</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Laravel</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Node.js</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">MSSQL</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Power BI</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Linux Server</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Windows Server</span></li>
-                      </ul>
-                    </div>
-                    <!--//resume-timeline-item-desc-->
-
-                  </article>
-                  <!--//resume-timeline-item-->
-
-                  <article class="resume-timeline-item position-relative pb-5">
-
-                    <div class="resume-timeline-item-header mb-2">
-                      <div class="d-flex flex-column flex-md-row">
-                        <h3 class="resume-position-title font-weight-bold mb-1">WEB Analyst and Developer</h3>
-                        <div class="resume-company-name ml-auto"><i class="far fa-building"></i> <a href='https://falconi.com' target='_blank'>Falconi</a></div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          WEX is a leading U.S. corporate payments and mobility
+                          fintech company. I primarily work on backend systems
+                          for authorization, reporting, and data analysis, while
+                          also supporting selected UI flows and developing
+                          systems/scripts in C/C++, Python, Java, and Bash.
+                        </p>
+                        <ul class="impact-list">
+                          <li>
+                            Delivered a real-time transaction reporting and
+                            integration capability by building a push service
+                            that streams live carrier, partner, and merchant
+                            transactions to customers.
+                          </li>
+                          <li>
+                            Provide production support, including AWS Console
+                            and CloudWatch investigation for incidents and
+                            reliability monitoring.
+                          </li>
+                          <li>
+                            Drive lower-environment architecture and development
+                            work across application, DevOps, and deployment
+                            workflows.
+                          </li>
+                          <li>
+                            Execute database schema evolution, including index
+                            additions and SQL query optimization for
+                            performance.
+                          </li>
+                        </ul>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >AWS</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Terraform</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Python</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >C/C++</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Java</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Shell</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >GitHub Actions</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Docker</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Kubernetes</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >CloudWatch</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >SQL Tuning</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >DB Indexing</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Authorization Systems</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Production Support</span
+                            >
+                          </li>
+                        </ul>
                       </div>
-                      <!--//row-->
-                      <div class="resume-position-time">Feb 2017 - Feb 2018</div>
-                    </div>
-                    <!--//resume-timeline-item-header-->
-                    <div class="resume-timeline-item-desc">
-                      <p>
-                        The company works with management consultancy, using the PDCA method to propose improvements to
-                        the management of client organizations. The work done in the company involves the development and
-                        customization of web pages in the Microsoft SharePoint tool. The development is done in .NET, HTML / CSS
-                        and JavaScript (jQuery) and includes the creation of a Wiki documentation model, followed today as a
-                        standard on the client. The development of functional and technical documentation and answering calls
-                        are also part of the work carried out as well as meetings for alignment and planning of the sprints
-                        with the SCRUM team.
-                      </p>
-                      <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p> -->
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                      <p>Operational management and cost reduction of DNIT - National Department of Infrastructure and Transport enterprises.</p>
-                      <ul>
-                        <li>Development of model documentation.</li>
-                        <li>SharePoint customization, allowing access and updating of information throughout the national territory.</li>
-                        <li>Consolidation and data processing for use in BI.</li>
-                        <li>Continuous cost reduction.</li>
-                      </ul>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">SharePoint</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">.Net</span></li>
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill"></span></li> -->
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li> -->
-                      </ul>
-                    </div>
-                    <!--//resume-timeline-item-desc-->
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
 
-                  </article>
-                  <!--//resume-timeline-item-->
-
-                  <article class="resume-timeline-item position-relative pb-5">
-
-                    <div class="resume-timeline-item-header mb-2">
-                      <div class="d-flex flex-column flex-md-row">
-                        <h3 class="resume-position-title font-weight-bold mb-1">Systems Developer and Consultant</h3>
-                        <div class="resume-company-name ml-auto"><i class="far fa-building"></i> <a href='#'>Freelancer</a></div>
+                    <article
+                      class="resume-timeline-item position-relative pb-5"
+                    >
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Full Stack Developer
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a
+                              href="https://www.oi.com.br/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Oi S/A</a
+                            >
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">
+                          Feb 2018 - Apr 2021
+                        </div>
                       </div>
-                      <!--//row-->
-                      <div class="resume-position-time">2014 - Current</div>
-                    </div>
-                    <!--//resume-timeline-item-header-->
-                    <div class="resume-timeline-item-desc">
-                      <p>
-                        Development of websites and systems for different segments such as medical clinics and schools.
-                        The work is carried out with the customer from the definition of current processes and the
-                        identification of problems to the solution proposal, development and implementation of the solution.
-                        All projects undergo various types of analysis such as risk analysis, impact, hardware components and
-                        available assets as well as database modeling, prototyping and survey and definition of requirements.
-                        These analyzes are performed before, during and after development, when applicable.
-                      </p>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-                      <p>
-                        Systems development for schools, medical clinics and other segments.
-                        The oldest system has been in the air for 4 years and still remains current in 2020,
-                        with the security and privacy of its users guaranteed and in compliance with the LGPD.
-                      </p>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies Used:</h4>
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/CSS</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Bootstrap</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Node.js</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Python</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                      </ul>
-                    </div>
-                    <!--//resume-timeline-item-desc-->
-
-                  </article>
-                  <!--//resume-timeline-item-->
-
-                  <article class="resume-timeline-item position-relative">
-
-                    <div class="resume-timeline-item-header mb-2">
-                      <div class="d-flex flex-column flex-md-row">
-                        <h3 class="resume-position-title font-weight-bold mb-1">Monitoring and Backup Analyst <small class="text-muted">(Intern)</small></h3>
-                        <div class="resume-company-name ml-auto"><i class="far fa-building"></i> <a href='http://servix.com/' target='_blank'>Servix</a></div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          Led development of a national-scale corporate web
+                          platform, supporting internal operations and roadmap
+                          expansion to customer-facing channels.
+                        </p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Achievements:
+                        </h4>
+                        <ul class="impact-list">
+                          <li>
+                            Led end-to-end delivery of a national platform
+                            supporting 600+ concurrent users in distributed
+                            nationwide operations.
+                          </li>
+                          <li>
+                            Integrated key systems through APIs/microservices,
+                            reducing manual B2B handoffs by 35%.
+                          </li>
+                          <li>
+                            Built georeferencing module for access feasibility,
+                            cost, and timeline estimates.
+                          </li>
+                          <li>
+                            Delivered Python automations and Power BI dashboards
+                            that reduced reporting lead time by 40%.
+                          </li>
+                        </ul>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Python</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >PHP (Legacy)</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Laravel</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >jQuery (Legacy)</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Node.js</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >HTML/SASS</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >MySQL</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >SQL Server</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Power BI</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Linux Server</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Windows Server (Legacy)</span
+                            >
+                          </li>
+                        </ul>
                       </div>
-                      <!--//row-->
-                      <div class="resume-position-time">Jan 2015 - Jan 2016</div>
-                    </div>
-                    <!--//resume-timeline-item-header-->
-                    <div class="resume-timeline-item-desc">
-                      <p>
-                        The company operates in the IT infrastructure area, providing its customers with data storage
-                        and protection solutions, server consolidation and virtualization, security and 24/7 connectivity.
-                        The work carried out in the company was directed to data protection (backup) and, after several training
-                        sessions, the implementation of backup solutions in the customers' environments was carried out.
-                        Attendance calls were made to customers of the solution with support from the NETAPP and SYMANTEC
-                        team in the USA, as well as documentation and small training sessions.
-                      </p>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies Used:</h4>
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">SnapProtect (NETAPP)</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">Zabbix</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill"></span></li>
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/LESS</span></li> -->
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">MongoDB</span></li> -->
-                      </ul>
-                    </div>
-                    <!--//resume-timeline-item-desc-->
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
 
-                  </article>
-                  <!--//resume-timeline-item-->
-
-                  <article class="resume-timeline-item position-relative">
-
-                    <div class="resume-timeline-item-header mb-2">
-                      <div class="d-flex flex-column flex-md-row">
-                        <h3 class="resume-position-title font-weight-bold mb-1">Solutions Consultant <small class="text-muted">(Intern)</small></h3>
-                        <div class="resume-company-name ml-auto"><i class="far fa-building"></i> <a href='https://www.modulo.com.br/' target='_blank'>Módulo</a></div>
+                    <article
+                      class="resume-timeline-item position-relative pb-5"
+                    >
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Web Analyst and Developer
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a
+                              href="https://falconi.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Falconi</a
+                            >
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">
+                          Feb 2017 - Feb 2018
+                        </div>
                       </div>
-                      <!--//row-->
-                      <div class="resume-position-time">Jan 2014 - Jan 2015</div>
-                    </div>
-                    <!--//resume-timeline-item-header-->
-                    <div class="resume-timeline-item-desc">
-                      <p>
-                        The company operates in the IT area providing customers with risk governance and compliance solutions
-                        using the Risk Manager® software itself. Performance in the company involved several areas, including
-                        the development of internal and external systems using PHP, HTML5, CSS3, JavaScript and MySQL, assistance
-                        in the post and pre-sale operations of the software (answering calls, conducting training and presenting
-                        the tool to the client), translation of documents (English-Portuguese and Portuguese-English), training
-                        in the fields of knowledge of risks and conformities based on own software and following the GRC standard
-                        and compatible with the technical standard ABNT NBR ISO 31000 - 2009 and others of your family.
-                      </p>
-                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies Used:</h4>
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">PHP</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                        <li class="list-inline-item"><span class="badge badge-primary badge-pill">MSSQL</span></li>
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/LESS</span></li> -->
-                        <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">MongoDB</span></li> -->
-                      </ul>
-                    </div>
-                    <!--//resume-timeline-item-desc-->
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          Developed and customized SharePoint solutions for
+                          management consulting engagements structured around
+                          PDCA practices.
+                        </p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p> -->
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Achievements:
+                        </h4>
+                        <ul class="impact-list">
+                          <li>
+                            Standardized technical and functional documentation
+                            with a reusable Wiki model.
+                          </li>
+                          <li>
+                            Customized SharePoint for nationwide access and data
+                            update workflows.
+                          </li>
+                          <li>
+                            Supported operational governance and cost
+                            optimization for DNIT initiatives.
+                          </li>
+                          <li>
+                            Aligned SCRUM rituals to improve consistency and
+                            delivery cadence.
+                          </li>
+                        </ul>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >SharePoint</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >HTML/CSS</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >JavaScript</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >.Net</span
+                            >
+                          </li>
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill"></span></li> -->
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li> -->
+                        </ul>
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
 
-                  </article>
-                  <!--//resume-timeline-item-->
+                    <article
+                      class="resume-timeline-item position-relative pb-5"
+                    >
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Systems Developer and Consultant
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a href="#">Freelancer</a>
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">2014 - Current</div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          Development of websites and systems for different
+                          segments such as medical clinics and schools. The work
+                          is carried out with the customer from the definition
+                          of current processes and the identification of
+                          problems to the solution proposal, development and
+                          implementation of the solution. All projects undergo
+                          various types of analysis such as risk analysis,
+                          impact, hardware components and available assets as
+                          well as database modeling, prototyping and survey and
+                          definition of requirements. These analyzes are
+                          performed before, during and after development, when
+                          applicable.
+                        </p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Achievements:
+                        </h4>
+                        <p>
+                          Systems development for schools, medical clinics and
+                          other segments. The oldest system has been running for
+                          10 years and remained up to date in 2026, with the
+                          security and privacy of its users guaranteed and in
+                          compliance with the LGPD.
+                        </p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >PHP (Legacy)</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >jQuery (Legacy)</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >HTML/CSS</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Bootstrap</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Node.js</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Python</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >MySQL</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
 
+                    <article class="resume-timeline-item position-relative">
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Monitoring and Backup Analyst
+                            <small class="text-muted">(Intern)</small>
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a
+                              href="http://servix.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Servix</a
+                            >
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">
+                          Jan 2015 - Jan 2016
+                        </div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          The company operates in the IT infrastructure area,
+                          providing its customers with data storage and
+                          protection solutions, server consolidation and
+                          virtualization, security and 24/7 connectivity. The
+                          work carried out in the company was directed to data
+                          protection (backup) and, after several training
+                          sessions, the implementation of backup solutions in
+                          the customers' environments was carried out.
+                          Attendance calls were made to customers of the
+                          solution with support from the NETAPP and SYMANTEC
+                          team in the USA, as well as documentation and small
+                          training sessions.
+                        </p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >SnapProtect (NETAPP)</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >Zabbix</span
+                            >
+                          </li>
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/LESS</span></li> -->
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">MongoDB</span></li> -->
+                        </ul>
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
 
+                    <article class="resume-timeline-item position-relative">
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3
+                            class="resume-position-title font-weight-bold mb-1"
+                          >
+                            Solutions Consultant
+                            <small class="text-muted">(Intern)</small>
+                          </h3>
+                          <div class="resume-company-name ml-auto">
+                            <i class="far fa-building"></i>
+                            <a
+                              href="https://www.modulo.com.br/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Módulo</a
+                            >
+                          </div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time">
+                          Jan 2014 - Jan 2015
+                        </div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc">
+                        <p>
+                          The company operates in the IT area providing
+                          customers with risk governance and compliance
+                          solutions using the Risk Manager® software itself.
+                          Performance in the company involved several areas,
+                          including the development of internal and external
+                          systems using PHP, HTML5, CSS3, JavaScript and MySQL,
+                          assistance in the post and pre-sale operations of the
+                          software (answering calls, conducting training and
+                          presenting the tool to the client), translation of
+                          documents (English-Portuguese and Portuguese-English),
+                          training in the fields of knowledge of risks and
+                          conformities based on own software and following the
+                          GRC standard and compatible with ABNT NBR ISO
+                          31000:2009 and related standards.
+                        </p>
+                        <h4
+                          class="resume-timeline-item-desc-heading font-weight-bold"
+                        >
+                          Technologies Used:
+                        </h4>
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >PHP</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >HTML</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >JavaScript</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >MySQL</span
+                            >
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="badge badge-primary badge-pill"
+                              >MSSQL</span
+                            >
+                          </li>
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/LESS</span></li> -->
+                          <!-- <li class="list-inline-item"><span class="badge badge-primary badge-pill">MongoDB</span></li> -->
+                        </ul>
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+                    </article>
+                    <!--//resume-timeline-item-->
+                  </div>
+                  <!--//resume-timeline-->
                 </div>
-                <!--//resume-timeline-->
-
-
-
-
-
-
-              </div>
-            </section>
-            <!--//experience-section-->
-          </div>
-          <div class="col-lg-3">
-            <section class="resume-section skills-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills</h2>
-              <div class="resume-section-content">
-                <div class="resume-skill-item">
-                  <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
-                  <ul class="list-unstyled mb-4">
-
-                    <!-- <li class="mb-2">
+              </section>
+              <!--//experience-section-->
+            </div>
+            <div class="col-lg-3">
+              <section class="resume-section skills-section mb-5" id="skills">
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  Skills
+                </h2>
+                <div class="resume-section-content">
+                  <div class="resume-skill-item">
+                    <h4 class="resume-skills-cat font-weight-bold">
+                      Cloud &amp; Operations
+                    </h4>
+                    <ul class="list-unstyled mb-4">
+                      <!-- <li class="mb-2">
 								            <div class="resume-skill-name">Python</div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li> -->
-                    <li class="mb-2">
-                      <div class="resume-skill-name">JavaScript</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">Angular</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">Node.js</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">Bootstrap</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <!--//resume-skill-item-->
+                      <li class="mb-2">
+                        <div class="resume-skill-name">
+                          AWS (Console, CloudWatch)
+                        </div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">
+                          Production Support &amp; Incident Investigation
+                        </div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 92%"
+                            aria-valuenow="92"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">
+                          DevOps, CI/CD, GitHub Actions, Terraform
+                        </div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--//resume-skill-item-->
 
-                <div class="resume-skill-item">
-                  <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+                  <div class="resume-skill-item">
+                    <h4 class="resume-skills-cat font-weight-bold">
+                      Backend, Data &amp; Architecture
+                    </h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <div class="resume-skill-name">Python</div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 95%"
+                            aria-valuenow="95"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">
+                          API &amp; Microservices Design
+                        </div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">
+                          SQL Optimization (MySQL &amp; SQL Server)
+                        </div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">C/C++ and Java</div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">Node.js and Docker</div>
+                        <div class="progress resume-progress">
+                          <div
+                            class="progress-bar theme-progress-bar-dark"
+                            role="progressbar"
+                            style="width: 80%"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--//resume-skill-item-->
+
+                  <div class="resume-skill-item">
+                    <h4 class="resume-skills-cat font-weight-bold">
+                      Leadership &amp; Domain Expertise
+                    </h4>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">DevOps</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >Object-oriented</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">GIT</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Bash & Shell</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Laravel</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Scrum</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Docker</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">AWS</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >Technical Leadership</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >Cross-team Collaboration</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >End-to-end Execution</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >Computer Forensics</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >LGPD / Compliance</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Terraform</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >GitHub Actions</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Kubernetes</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Prototyping</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary"
+                          >Requirements Analysis</span
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="badge badge-secondary">Data Modeling</span>
+                      </li>
+
+                      <!-- <li class="list-inline-item"><span class="badge badge-light">Shopify</span></li> -->
+                    </ul>
+                  </div>
+                  <!--//resume-skill-item-->
+                </div>
+                <!--resume-section-content-->
+              </section>
+              <!--//skills-section-->
+              <section
+                class="resume-section education-section mb-5"
+                id="education"
+              >
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  Education
+                </h2>
+                <div class="resume-section-content">
                   <ul class="list-unstyled">
                     <li class="mb-2">
-                      <div class="resume-skill-name">Python </div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="resume-degree font-weight-bold">
+                        Computer Forensics and Digital Expertise
+                        <i>(Lato sensu)</i>
                       </div>
+                      <div class="resume-degree-org">IPOG</div>
+                      <div class="resume-degree-time">2016 - 2018</div>
                     </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">MySQL &amp; SQL Server</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width:100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <li>
+                      <div class="resume-degree font-weight-bold">
+                        Systems Analysis and Development <i>(Tecnólogo)</i>
                       </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">PHP 7+</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">Linux &amp; Windows Servers</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </li>
-                    <li class="mb-2">
-                      <div class="resume-skill-name">Docker</div>
-                      <div class="progress resume-progress">
-                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                      <div class="resume-degree-org">CEUB</div>
+                      <div class="resume-degree-time">2014 - 2016</div>
                     </li>
                   </ul>
                 </div>
-                <!--//resume-skill-item-->
-
-                <div class="resume-skill-item">
-                  <h4 class="resume-skills-cat font-weight-bold">Outras</h4>
-                  <ul class="list-inline">
-                    <li class="list-inline-item"><span class="badge badge-secondary">DevOps</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Object-oriented</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">GIT</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Bash & Shell</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Laravel</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Zend</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Symfony</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">jQuery</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">ITIL</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Scrum</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Docker</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Prototyping</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Pentest</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Requirements Analysis</span></li>
-                    <li class="list-inline-item"><span class="badge badge-secondary">Data Modeling</span></li>
-
-
-                    <!-- <li class="list-inline-item"><span class="badge badge-light">Shopify</span></li> -->
+              </section>
+              <!--//education-section-->
+              <section class="resume-section reference-section mb-5">
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  Certifications
+                </h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled resume-awards-list">
+                    <li class="mb-2 pl-4 position-relative">
+                      <i
+                        class="resume-award-icon position-absolute"
+                        data-fa-transform="shrink-2"
+                        ><img
+                          class="img-cert"
+                          src="assets/images/cert.png"
+                          alt="Certification icon"
+                      /></i>
+                      <div class="resume-award-name">TOEFL</div>
+                      <div class="resume-award-desc">IELTS</div>
+                    </li>
+                    <li class="mb-0 pl-4 position-relative">
+                      <i
+                        class="resume-award-icon position-absolute"
+                        data-fa-transform="shrink-2"
+                        ><img
+                          class="img-cert"
+                          src="assets/images/cert.png"
+                          alt="Certification icon"
+                      /></i>
+                      <div class="resume-award-name">
+                        Full-Stack Web Developer
+                      </div>
+                      <div class="resume-award-desc">CJR</div>
+                    </li>
+                    <li class="mb-0 pl-4 position-relative">
+                      <i
+                        class="resume-award-icon position-absolute"
+                        data-fa-transform="shrink-2"
+                        ><img
+                          class="img-cert"
+                          src="assets/images/cert.png"
+                          alt="Certification icon"
+                      /></i>
+                      <div class="resume-award-name">
+                        SCRUM Foundation Professional
+                      </div>
+                      <div class="resume-award-desc">CertiProf</div>
+                    </li>
                   </ul>
                 </div>
-                <!--//resume-skill-item-->
-              </div>
-              <!--resume-section-content-->
-            </section>
-            <!--//skills-section-->
-            <section class="resume-section education-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
-              <div class="resume-section-content">
-                <ul class="list-unstyled">
-                  <li class="mb-2">
-                    <div class="resume-degree font-weight-bold">Computer Forensics and Digital Expertise <i>(Lato sensu)</i></div>
-                    <div class="resume-degree-org">IPOG</div>
-                    <div class="resume-degree-time">2016 - 2018</div>
-                  </li>
-                  <li>
-                    <div class="resume-degree font-weight-bold">Systems Analysis and Development <i>(Tecnólogo)</i></div>
-                    <div class="resume-degree-org">CEUB</div>
-                    <div class="resume-degree-time">2014 - 2016</div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <!--//education-section-->
-            <section class="resume-section reference-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certifications</h2>
-              <div class="resume-section-content">
-                <ul class="list-unstyled resume-awards-list">
-                  <li class="mb-2 pl-4 position-relative">
-                    <i class="resume-award-icon position-absolute" data-fa-transform="shrink-2"><img class='img-cert' src='assets/images/cert.png' /></i>
-                    <div class="resume-award-name">TOEFL</div>
-                    <div class="resume-award-desc">IELTS</div>
-                  </li>
-                  <li class="mb-0 pl-4 position-relative">
-                    <i class="resume-award-icon position-absolute" data-fa-transform="shrink-2"><img class='img-cert' src='assets/images/cert.png' /></i>
-                    <div class="resume-award-name">Full-Stack WEB Developer</div>
-                    <div class="resume-award-desc">CJR</div>
-                  </li>
-                  <li class="mb-0 pl-4 position-relative">
-                    <i class="resume-award-icon position-absolute" data-fa-transform="shrink-2"><img class='img-cert' src='assets/images/cert.png' /></i>
-                    <div class="resume-award-name">SCRUM Foundation Professional</div>
-                    <div class="resume-award-desc">CertiProf</div>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <!--//interests-section-->
-            <section class="resume-section language-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
-              <div class="resume-section-content">
-                <ul class="list-unstyled resume-lang-list">
-                  <!-- <li class="mb-2">
+              </section>
+              <!--//interests-section-->
+              <section class="resume-section language-section mb-5">
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  Languages
+                </h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled resume-lang-list">
+                    <!-- <li class="mb-2">
                       <span class="resume-lang-name font-weight-bold">Português</span> <i>(Nativo)</i>
                       <div class="progress resume-progress">
                         <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -496,54 +1113,55 @@
                         <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </li> -->
-                  <li class="mb-2"><span class="resume-lang-name font-weight-bold">Portuguese</span> <small class="text-muted font-weight-normal">(Native)</small></li>
-                  <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">English</span> <small class="text-muted font-weight-normal">(Advanced)</small></li>
-                  <li><span class="resume-lang-name font-weight-bold">Spanish</span> <small class="text-muted font-weight-normal">(Intermediate)</small></li>
-                </ul>
-              </div>
-            </section>
-            <!--//language-section-->
-            <section class="resume-section interests-section mb-5">
-              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Hobbies and Interests</h2>
-              <div class="resume-section-content">
-                <ul class="list-unstyled">
-                  <li class="mb-1">Cycling</li>
-                  <li class="mb-1">Music</li>
-                  <li class="mb-1">Automation</li>
-                </ul>
-              </div>
-            </section>
-            <!--//interests-section-->
-
+                    <li class="mb-2">
+                      <span class="resume-lang-name font-weight-bold"
+                        >Portuguese</span
+                      >
+                      <small class="text-muted font-weight-normal"
+                        >(Native)</small
+                      >
+                    </li>
+                    <li class="mb-2 align-middle">
+                      <span class="resume-lang-name font-weight-bold"
+                        >English</span
+                      >
+                      <small class="text-muted font-weight-normal"
+                        >(Professional/Native)</small
+                      >
+                    </li>
+                    <li>
+                      <span class="resume-lang-name font-weight-bold"
+                        >Spanish</span
+                      >
+                      <small class="text-muted font-weight-normal"
+                        >(Intermediate)</small
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!--//language-section-->
+              <section class="resume-section interests-section mb-5">
+                <h2
+                  class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3"
+                >
+                  Hobbies and Interests
+                </h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled">
+                    <li class="mb-1">Cycling</li>
+                    <li class="mb-1">Music</li>
+                    <li class="mb-1">Automation</li>
+                  </ul>
+                </div>
+              </section>
+              <!--//interests-section-->
+            </div>
           </div>
+          <!--//row-->
         </div>
-        <!--//row-->
+        <!--//resume-body-->
       </div>
-      <!--//resume-body-->
-
-
-    </div>
-  </article>
-
-
-  <script src="assets/js/jquery.min.js" charset="utf-8" type="text/javascript"></script>
-
-  <script type="text/javascript">
-
-    $('#selectLang').on('change',function(){
-      selectedLang = $(this).val();
-      if(selectedLang == 'pt'){
-        window.location.href='index.html';
-      }
-      // console.log(selectedLang);
-    });
-
-  </script>
-
-
-
-
-
-</body>
-
+    </article>
+  </body>
 </html>

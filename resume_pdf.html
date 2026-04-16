@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Pena - ATS Resume</title>
+    <style>
+      :root {
+        --text: #1f2937;
+        --muted: #4b5563;
+        --rule: #d1d5db;
+        --accent: #111827;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: #fff;
+        line-height: 1.35;
+        font-size: 12.5px;
+      }
+
+      .page {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 18px 22px 24px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 0.2px;
+        color: var(--accent);
+      }
+
+      .headline {
+        margin: 4px 0 8px;
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .contact {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .section {
+        margin-top: 12px;
+      }
+
+      .section h2 {
+        margin: 0 0 6px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 3px;
+      }
+
+      .summary {
+        margin: 0;
+        color: var(--text);
+      }
+
+      .entry {
+        margin-top: 9px;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+
+      .role {
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .company {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .period {
+        color: var(--muted);
+        font-size: 11.5px;
+        white-space: nowrap;
+      }
+
+      ul {
+        margin: 5px 0 0 16px;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 3px;
+      }
+
+      .skills-line,
+      .edu-line,
+      .cert-line {
+        margin: 4px 0;
+      }
+
+      .label {
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      @media print {
+        @page {
+          size: A4;
+          margin: 10mm;
+        }
+
+        body {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>Felipe Pena</h1>
+        <p class="headline">
+          Senior Software Engineer | Product, Cloud, and Platform Engineering
+        </p>
+        <p class="contact">
+          Email:
+          <a href="mailto:felipecgpena@gmail.com">felipecgpena@gmail.com</a> |
+          Phone: +55 61 98551-3997 | LinkedIn: linkedin.com/in/felipe-pena |
+          GitHub: github.com/devcentre
+        </p>
+      </header>
+
+      <section class="section">
+        <h2>Summary</h2>
+        <p class="summary">
+          Senior Software Engineer with 10+ years of experience delivering
+          full-stack products, cloud-enabled platforms, and automation for
+          enterprise and SMB environments. Strong track record leading
+          end-to-end execution across architecture, implementation, CI/CD, and
+          operations. Combines hands-on development with cross-team leadership
+          to improve delivery speed, reliability, and decision quality.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <span class="role">Senior Software Developer Engineer</span> -
+              <span class="company">WEX Inc</span>
+            </div>
+            <span class="period">Apr 2021 - Present</span>
+          </div>
+          <ul>
+            <li>
+              WEX is a leading U.S. corporate payments and mobility fintech
+              company; I work mainly on backend authorization, reporting, and
+              data analysis systems.
+            </li>
+            <li>
+              Delivered real-time transaction reporting and integration by
+              building a push service that streams live carrier, partner, and
+              merchant transactions to customers.
+            </li>
+            <li>
+              Provide production support through AWS Console and CloudWatch,
+              investigating incidents and improving operational reliability.
+            </li>
+            <li>
+              Drive lower-environment architecture, development, and DevOps
+              workflows for safer release readiness.
+            </li>
+            <li>
+              Implement database schema evolution, including index additions and
+              SQL query optimization for performance.
+            </li>
+            <li>
+              Develop systems and automation scripts in C/C++, Python, Java, and
+              Bash, while also supporting selected UI flows.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <span class="role">Full Stack Developer</span> -
+              <span class="company">Oi S/A</span>
+            </div>
+            <span class="period">Feb 2018 - Apr 2021</span>
+          </div>
+          <ul>
+            <li>
+              Led roadmap and end-to-end delivery of a national internal
+              platform supporting 600+ concurrent users, aligning product,
+              operations, and engineering execution.
+            </li>
+            <li>
+              Orchestrated API and microservices integrations across systems,
+              reducing manual B2B handoffs by 35%.
+            </li>
+            <li>
+              Built a georeferencing engine for feasibility, cost, and lead-time
+              simulation, improving planning accuracy for commercial teams.
+            </li>
+            <li>
+              Developed Python automations and executive Power BI dashboards,
+              reducing reporting lead time by 40% and accelerating management
+              decision cycles.
+            </li>
+            <li>
+              Acted as technical lead across business and engineering teams,
+              driving backlog prioritization, cross-team coordination, and
+              predictable releases.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <span class="role">Software Engineer / Web Analyst</span> -
+              <span class="company">Falconi</span>
+            </div>
+            <span class="period">Feb 2017 - Feb 2018</span>
+          </div>
+          <ul>
+            <li>
+              Designed and implemented SharePoint-based workflow solutions for
+              PDCA-driven consulting engagements.
+            </li>
+            <li>
+              Standardized technical/functional documentation with reusable Wiki
+              patterns, reducing onboarding friction for new teams.
+            </li>
+            <li>
+              Enabled nationwide collaboration and data governance flows across
+              distributed client stakeholders.
+            </li>
+            <li>
+              Supported public infrastructure programs with process improvements
+              tied to operational governance and cost control.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <span class="role"
+                >Systems Developer and Consultant (Part-time Freelance)</span
+              >
+              - <span class="company">Independent</span>
+            </div>
+            <span class="period"
+              >2014 - Present (Parallel to full-time roles)</span
+            >
+          </div>
+          <ul>
+            <li>
+              Delivered custom web systems for clinics, schools, and SMBs,
+              covering discovery, architecture, implementation, and support.
+            </li>
+            <li>
+              Led end-to-end lifecycle from requirements and prototyping to
+              deployment and iterative optimization.
+            </li>
+            <li>
+              Implemented secure and maintainable solutions aligned with
+              privacy, continuity, and compliance requirements (including LGPD
+              context).
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <p class="skills-line">
+          <span class="label">Cloud, Operations, and Reliability:</span> AWS,
+          CloudWatch, Production Support, Incident Investigation, Linux, Docker,
+          Terraform
+        </p>
+        <p class="skills-line">
+          <span class="label">Backend and Architecture:</span> Python, Java,
+          C/C++, SQL, API and Microservices Design, Node.js
+        </p>
+        <p class="skills-line">
+          <span class="label">Delivery and DevOps:</span> CI/CD, GitHub Actions,
+          Git, DevOps Practices, Release and Environment Management, You Build
+          It You Run It Mindset
+        </p>
+        <p class="skills-line">
+          <span class="label">Web and Frameworks:</span> HTML, CSS, SASS,
+          Node.js, Laravel, JavaScript
+        </p>
+        <p class="skills-line">
+          <span class="label">Legacy Stack (Earlier Roles):</span> PHP, jQuery,
+          SharePoint, .NET Framework
+        </p>
+        <p class="skills-line">
+          <span class="label">Data and BI:</span> MySQL, SQL Server, Power BI,
+          Data Modeling, DB Indexing, SQL Query Optimization
+        </p>
+        <p class="skills-line">
+          <span class="label">Leadership and Execution:</span> Technical
+          Leadership, Cross-team Collaboration, End-to-end Delivery, Product
+          Discovery to Production, Scrum, Requirements Analysis
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <p class="edu-line">
+          <span class="label"
+            >Computer Forensics and Digital Expertise (Lato Sensu)</span
+          >
+          - IPOG (2016 - 2018)
+        </p>
+        <p class="edu-line">
+          <span class="label"
+            >Systems Analysis and Development (Technologist)</span
+          >
+          - CEUB (2014 - 2016)
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+        <p class="cert-line">English Proficiency Exams: TOEFL and IELTS</p>
+        <p class="cert-line">Full-Stack Web Developer - CJR</p>
+        <p class="cert-line">SCRUM Foundation Professional - CertiProf</p>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+        <p>
+          Portuguese (Native), English (Professional/Native), Spanish
+          (Intermediate)
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
