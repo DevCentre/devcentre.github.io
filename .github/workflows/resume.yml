@@ -1,0 +1,94 @@
+name: Resume
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+    paths:
+      - "index*.html"
+      - "assets/**"
+      - "scripts/**"
+      - "package*.json"
+      - ".github/workflows/resume.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: resume-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No em dashes in resume pages
+        run: |
+          if grep -n '—' index.html index_pt.html index_en.html resume_pdf.html; then
+            echo "::error::Em dash found. Use an en dash for ranges, a middle dot in titles, or parentheses."
+            exit 1
+          fi
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude linkedin.com index.html index_pt.html
+          fail: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Ubuntu 24.04 blocks the user namespaces Chrome's sandbox needs.
+      - name: Allow Chrome sandbox
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+
+      - run: npm run pdf
+
+      - name: PDFs are at most 3 pages
+        run: |
+          sudo apt-get install -y -qq poppler-utils > /dev/null
+          for f in FelipePena-CV.pdf FelipePena-CV_PT.pdf; do
+            pages=$(pdfinfo "$f" | awk '/^Pages:/ {print $2}')
+            echo "$f: $pages pages"
+            if [ "$pages" -gt 3 ]; then
+              echo "::error file=$f::$f has $pages pages (max 3)"
+              exit 1
+            fi
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdfs
+          path: FelipePena-CV*.pdf
+
+  publish:
+    needs: check
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: resume-pdfs
+
+      - name: Commit regenerated PDFs
+        run: |
+          if git diff --quiet -- FelipePena-CV.pdf FelipePena-CV_PT.pdf; then
+            echo "PDFs unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add FelipePena-CV.pdf FelipePena-CV_PT.pdf
+          git commit -m "Regenerate resume PDFs"
+          git push
