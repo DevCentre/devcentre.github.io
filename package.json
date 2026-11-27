@@ -5,6 +5,6 @@
     "pdf": "node scripts/generate-pdf.js"
   },
   "devDependencies": {
-    "puppeteer": "latest"
+    "puppeteer": "^25.19.0"
   }
 }
