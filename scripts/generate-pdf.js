@@ -5,8 +5,7 @@ const puppeteer = require("puppeteer");
 const OUTPUT_DIR = process.cwd();
 const PAGES = [
   { input: "index.html", output: "FelipePena-CV.pdf" },
-  { input: "index_en.html", output: "FelipePena-CV_EN.pdf" },
-  { input: "resume_pdf.html", output: "FelipePena-CV_ATS.pdf" },
+  { input: "index_pt.html", output: "FelipePena-CV_PT.pdf" },
 ];
 
 async function renderPdf(page, input, output) {
@@ -19,10 +18,10 @@ async function renderPdf(page, input, output) {
     printBackground: true,
     preferCSSPageSize: true,
     margin: {
-      top: "10mm",
-      right: "10mm",
-      bottom: "10mm",
-      left: "10mm",
+      top: "0",
+      right: "0",
+      bottom: "0",
+      left: "0",
     },
   });
 }
@@ -30,9 +29,14 @@ async function renderPdf(page, input, output) {
 async function main() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
-  const browser = await puppeteer.launch({
-    headless: true,
-  });
+  let browser;
+  try {
+    browser = await puppeteer.launch({ headless: true });
+  } catch (error) {
+    const reason = error instanceof Error ? error.message.split("\n")[0] : error;
+    process.stderr.write(`Bundled Chrome unavailable (${reason}). Using system Chrome.\n`);
+    browser = await puppeteer.launch({ headless: true, channel: "chrome" });
+  }
 
   try {
     const page = await browser.newPage();
